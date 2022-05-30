@@ -13,7 +13,7 @@ This is the page where you have to answer my question.
 <br>
 
 <!-- This is the most basic way of implementing an input field -->
-<p><b>How much money do earn per month?</b></p>
+<b>How much money do you earn per month?</b>
 {{ formfield "money_question"}}
 
 <!-- This is the most basic way of implementing error handling -->
@@ -25,7 +25,7 @@ be the same as on models.py and the value is what will be displayed in your data
 if the option is clicked -->
 
 <p><b>Which type of cafeteria food do you prefer?</b></p>
-<input type="radio" name="food" value="1" /> Seezeit-teller
+<input type="radio" name="food" value="1" /> Seezeit-Teller
 <br>
 <input type="radio" name="food" value="2" /> KombinierBar
 <br>
@@ -40,10 +40,10 @@ if the option is clicked -->
 
 <!-- This is the most basic way of implementing an input field -->
 <b>What is, all in all, your favorite food?</b>
-{{ formfield "favot_question"}}
+{{ formfield "Specify_question"}}
 
 <!-- This is the most basic way of implementing error handling -->
-{{ formfield_errors 'favot_question' }}
+{{ formfield_errors 'Specify_question'}}
 
 
 <!-- we can also have variables that are not displayed and work in the background -->

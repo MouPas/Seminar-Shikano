@@ -20,7 +20,7 @@ class Welcome(Page):
 
 class DemoPage(Page):
     form_model = Player
-    form_fields = ['money_question', 'food', 'favot_question',  'hidden_input']
+    form_fields = ['money_question', 'food', 'Specify_question',  'hidden_input']
 
 
 

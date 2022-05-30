@@ -33,7 +33,7 @@ class Player(BasePlayer):
     entry_question = models.StringField(blank = True) #this is an optional field through blank = True
     money_question = models.IntegerField(max=1600, min=0)  #we can also have max and min guidelines
     food = models.IntegerField(initial=-999)  #we can add an initial value
-    favot_question = models.StringField(blank=True)  # this is an optional field through blank = True
+    Specify_question = models.StringField(blank=True)  # this is an optional field through blank = True
     hidden_input = models.IntegerField(initial=50, blank=True)
 
     #custom error message
