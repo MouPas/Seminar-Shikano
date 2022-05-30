@@ -31,16 +31,16 @@ class Player(BasePlayer):
     
 #The Variables are structured on the base of pages
     entry_question = models.StringField(blank = True) #this is an optional field through blank = True
-    age_question = models.IntegerField(max=110, min=1)  #we can also have max and min guidelines
-    gender = models.IntegerField(initial=-999)  #we can add an initial value 
+    money_question = models.IntegerField(max=1600, min=0)  #we can also have max and min guidelines
+    food = models.IntegerField(initial=-999)  #we can add an initial value
+    favot_question = models.StringField(blank=True)  # this is an optional field through blank = True
     hidden_input = models.IntegerField(initial=50, blank=True)
-
 
     #custom error message
         #has to: 
         #1) be in the class Player (important to indent the right way)
         #2) have a specific name "variablename"_error_message
-    def age_question_error_message(player, value):
-        if value > 50:
-            return 'You are too old. Are you sure you are taking this course?'
+    def money_question_error_message(player, value):
+        if value > 1500:
+            return 'You are pretty rich. Are you sure you are student?'
                         
